@@ -42,7 +42,7 @@ export function WorkGallery() {
             Our Work in Leeds
           </h2>
           <p className="mt-4 text-base leading-relaxed text-white/65">
-            Boilers, bathrooms, and plumbing — completed to a professional standard across Leeds.
+            {galleryItems.length} recent projects across Leeds — boilers, bathrooms, and plumbing.
             Tap any photo to view full size.
           </p>
         </div>
