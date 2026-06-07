@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #1c2b2b;
+  --color-charcoal-light: #2a3d3d;
+  --color-flame: #f97316;
+  --color-flame-dark: #ea580c;
+  --color-warm-grey: #f5f5f4;
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.blueprint-pattern {
+  background-image:
+    linear-gradient(rgba(249, 115, 22, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(249, 115, 22, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.pipe-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23F97316' stroke-opacity='0.06' stroke-width='1'%3E%3Cpath d='M0 30h60M30 0v60'/%3E%3Cpath d='M0 15h60M15 0v60M45 0v60'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero-glow {
+  background:
+    radial-gradient(ellipse 70% 60% at 85% 50%, rgba(249, 115, 22, 0.35) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(249, 115, 22, 0.12) 0%, transparent 60%);
+}
