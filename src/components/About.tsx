@@ -1,3 +1,5 @@
+import { images } from '@/lib/images'
+
 const stats = [
   { value: '20+', label: 'Years Experience' },
   { value: 'Gas Safe', label: 'Registered' },
@@ -34,14 +36,18 @@ export function About() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center">
-            <div className="relative flex h-64 w-64 items-center justify-center rounded-full border-4 border-charcoal/10 bg-charcoal sm:h-80 sm:w-80">
-              <div className="absolute inset-4 rounded-full border border-flame/30" aria-hidden="true" />
-              <div className="text-center">
-                <p className="font-display text-5xl font-bold text-flame sm:text-6xl">Est.</p>
-                <p className="font-display text-6xl font-bold text-white sm:text-7xl">2005</p>
-                <p className="mt-2 text-sm text-white/60">Leeds, West Yorkshire</p>
-              </div>
+          <div className="relative">
+            <div className="overflow-hidden rounded-xl border border-charcoal/10 shadow-lg">
+              <img
+                src={images.about}
+                alt="LS Plumbing engineer carrying out professional plumbing work in Leeds"
+                className="aspect-[16/10] w-full object-cover object-center"
+              />
+            </div>
+            <div className="absolute -bottom-5 -left-3 rounded-lg bg-charcoal px-5 py-4 shadow-lg sm:-left-5">
+              <p className="font-display text-sm font-bold uppercase tracking-wider text-flame">Est.</p>
+              <p className="font-display text-4xl font-bold text-white">2005</p>
+              <p className="mt-1 text-xs text-white/60">Leeds, West Yorkshire</p>
             </div>
           </div>
         </div>

@@ -1,7 +1,5 @@
+import { images } from '@/lib/images'
 import { PHONE, PHONE_HREF, scrollToSection } from '@/lib/utils'
-
-const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=80'
 
 const badges = [
   { icon: '🔥', label: 'Gas Safe Registered' },
@@ -15,9 +13,9 @@ export function Hero() {
     <section id="home" className="relative overflow-hidden bg-charcoal pt-[4.5rem]">
       <div className="absolute inset-0 pipe-pattern blueprint-pattern hero-glow" aria-hidden="true" />
       <img
-        src={HERO_IMAGE}
+        src={images.hero}
         alt=""
-        className="absolute inset-0 h-full w-full object-cover opacity-20"
+        className="absolute inset-0 h-full w-full object-cover object-center opacity-30"
         aria-hidden="true"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/95 to-charcoal/80" aria-hidden="true" />
