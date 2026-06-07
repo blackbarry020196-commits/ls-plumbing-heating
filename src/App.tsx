@@ -5,6 +5,7 @@ import { WhoWeWorkWith } from '@/components/WhoWeWorkWith'
 import { About } from '@/components/About'
 import { Reviews } from '@/components/Reviews'
 import { Contact } from '@/components/Contact'
+import { WorkGallery } from '@/components/WorkGallery'
 import { Footer } from '@/components/Footer'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Hero />
         <Services />
+        <WorkGallery />
         <WhoWeWorkWith />
         <About />
         <Reviews />

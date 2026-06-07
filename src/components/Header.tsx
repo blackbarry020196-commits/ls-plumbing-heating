@@ -5,6 +5,7 @@ import { cn, HOURS, PHONE, PHONE_HREF, scrollToSection } from '@/lib/utils'
 const navLinks = [
   { label: 'Home', id: 'home' },
   { label: 'Services', id: 'services' },
+  { label: 'Gallery', id: 'gallery' },
   { label: 'About', id: 'about' },
   { label: 'Reviews', id: 'reviews' },
   { label: 'Contact', id: 'contact' },

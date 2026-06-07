@@ -3,6 +3,7 @@ import { PHONE, PHONE_HREF, scrollToSection } from '@/lib/utils'
 
 const quickLinks = [
   { label: 'Services', id: 'services' },
+  { label: 'Gallery', id: 'gallery' },
   { label: 'About', id: 'about' },
   { label: 'Contact', id: 'contact' },
 ]
